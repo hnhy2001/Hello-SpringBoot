@@ -1,0 +1,89 @@
+Starting HelloSpringBootApplication using Java 11.0.9 on DESKTOP-9I09UVV with PID 14092 (E:\work\Hello-SpringBoot\target\classes started by hoain in E:\work\Hello-SpringBoot)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2ffb3aec' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 9002 (http)
+Initializing ProtocolHandler ["http-nio-9002"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.46]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1337 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.32.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3da55998, org.springframework.security.web.context.SecurityContextPersistenceFilter@38834000, org.springframework.security.web.header.HeaderWriterFilter@4f5bfbca, org.springframework.web.filter.CorsFilter@40ebb56, org.springframework.security.web.authentication.logout.LogoutFilter@30221cfa, com.example.hellospringboot.Filter.JwtAuthenticationFilter@4d93e5bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63e648a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@eee26bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b2fc2c0, org.springframework.security.web.session.SessionManagementFilter@50dd1e3a, org.springframework.security.web.access.ExceptionTranslationFilter@3fc14dc0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@99af41d]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Starting ProtocolHandler ["http-nio-9002"]
+Tomcat started on port(s): 9002 (http) with context path '/api/v1'
+Started HelloSpringBootApplication in 4.257 seconds (JVM running for 6.048)
+okle
+Starting HelloSpringBootApplication using Java 11.0.9 on DESKTOP-9I09UVV with PID 7024 (E:\work\Hello-SpringBoot\target\classes started by hoain in E:\work\Hello-SpringBoot)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2c9a6717' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 9002 (http)
+Initializing ProtocolHandler ["http-nio-9002"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.46]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1637 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.32.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ca9d3b2, org.springframework.security.web.context.SecurityContextPersistenceFilter@47b494ce, org.springframework.security.web.header.HeaderWriterFilter@3c04ddda, org.springframework.web.filter.CorsFilter@2f8b48c3, org.springframework.security.web.authentication.logout.LogoutFilter@3f2d2f22, com.example.hellospringboot.Filter.JwtAuthenticationFilter@3c5044fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b764e66, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@578c99ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2af31aba, org.springframework.security.web.session.SessionManagementFilter@585672dd, org.springframework.security.web.access.ExceptionTranslationFilter@790f4933, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17b387ef]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Starting ProtocolHandler ["http-nio-9002"]
+Tomcat started on port(s): 9002 (http) with context path '/api/v1'
+Started HelloSpringBootApplication in 5.134 seconds (JVM running for 6.931)
+Khởi động chương trình thành công
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [269] milliseconds.
+Đang gọi đến phương thức loginUser thông qua đối tượng userMgmtService
+Tên đăng nhập hoặc mật khẩu không chính xác
+Đang gọi đến phương thức loginUser thông qua đối tượng userMgmtService
+Đăng nhập thành công
+Starting HelloSpringBootApplication using Java 11.0.9 on DESKTOP-9I09UVV with PID 24944 (E:\work\Hello-SpringBoot\target\classes started by hoain in E:\work\Hello-SpringBoot)
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6a9344f5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 9002 (http)
+Initializing ProtocolHandler ["http-nio-9002"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.46]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1387 ms
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.32.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37aea657, org.springframework.security.web.context.SecurityContextPersistenceFilter@600e2000, org.springframework.security.web.header.HeaderWriterFilter@459df48d, org.springframework.web.filter.CorsFilter@3ca9d3b2, org.springframework.security.web.authentication.logout.LogoutFilter@5b29d699, com.example.hellospringboot.Filter.JwtAuthenticationFilter@2213854b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f190cfe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b72b13a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f8b48c3, org.springframework.security.web.session.SessionManagementFilter@591febcb, org.springframework.security.web.access.ExceptionTranslationFilter@4e4c05a0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d195d15]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Starting ProtocolHandler ["http-nio-9002"]
+Tomcat started on port(s): 9002 (http) with context path '/api/v1'
+Started HelloSpringBootApplication in 4.516 seconds (JVM running for 6.478)
+Khởi động chương trình thành công
