@@ -12,11 +12,10 @@ public class MessagesouceService {
     @Autowired
     MessageSource messageSource;
 
-    public String getMess(Locale locale, String code){
-        if (code != "login.mess" && code != "update.mess" && code != "create.mess" && code != "delete.mess"){
+    public String getMess(Locale locale, String code) {
+        if (code != "login.mess" && code != "update.mess" && code != "create.mess" && code != "delete.mess") {
             return code;
-        }
-        else{
+        } else {
             return messageSource.getMessage(code, null, locale);
         }
     }

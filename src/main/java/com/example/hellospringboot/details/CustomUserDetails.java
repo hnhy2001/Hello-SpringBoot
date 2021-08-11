@@ -22,6 +22,7 @@ import java.util.List;
 public class CustomUserDetails implements UserDetails {
 
     private User user;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authorities = new ArrayList<>();

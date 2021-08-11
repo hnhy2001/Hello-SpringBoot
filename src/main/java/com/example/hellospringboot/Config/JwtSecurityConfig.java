@@ -31,9 +31,10 @@ public class JwtSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.cors().and().csrf().disable();
 
-        http.exceptionHandling().authenticationEntryPoint(restAuthenticationEntryPoint)
+        http.
+                exceptionHandling().authenticationEntryPoint(restAuthenticationEntryPoint)
                 .and().authorizeRequests()
-                .antMatchers( "/user/login", "/demo").permitAll()
+                .antMatchers("/user/login", "/demo").permitAll()
                 .anyRequest().authenticated();
 
         http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);

@@ -7,6 +7,7 @@ import com.example.hellospringboot.controller.request.FindUserRequest;
 import com.example.hellospringboot.jwt.JwtTokenProvider;
 import com.example.hellospringboot.model.User;
 import lombok.SneakyThrows;
+import org.apache.tomcat.jni.Local;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -17,6 +18,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
@@ -45,6 +47,7 @@ public class UserServiceTest {
     String pass = "Pass@demo";
     User user = new User();
     List<User> userList = new ArrayList<>();
+    Locale locale ;
 
 
     @SneakyThrows
@@ -54,7 +57,7 @@ public class UserServiceTest {
         when(userRepository.findAllByEmailAndPassword(email, pass)).thenReturn(user);
         when(jwtTokenProvider.generateToken(user)).thenReturn("test thanh cong");
 
-        assertEquals("test thanh cong" , userMgmtService.login(email, pass));
+        assertEquals("test thanh cong" , userMgmtService.login(email, pass, locale));
     }
 
     @SneakyThrows
@@ -62,7 +65,7 @@ public class UserServiceTest {
     public void getAllByConditionsTestSuccess(){
         userList.add(user);
         when(customUserRepository.findAllByConditions(FindUserRequest.builder().build())).thenReturn(userList);
-        assertEquals(userList, userMgmtService.getAllByConditions(null, null, null, null, null, null, null));
+        assertEquals(userList, userMgmtService.getAllByConditions(null, null, null, null, null, null, null, locale));
     }
 
 

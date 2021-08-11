@@ -7,21 +7,20 @@ import java.util.regex.Pattern;
 @Service
 public class DemoService {
 
-    public int sum(int a, int b){
-        int c = a+b;
+    public int sum(int a, int b) {
+        int c = a + b;
         return c;
     }
 
-    public String okela(){
+    public String okela() {
         return "ok";
     }
 
-    public String demoPass(String pass){
+    public String demoPass(String pass) {
         String patternStr = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$";
-        if (Pattern.matches(patternStr,pass)){
+        if (Pattern.matches(patternStr, pass)) {
             return "ok";
-        }
-        else{
+        } else {
             return "no";
         }
     }

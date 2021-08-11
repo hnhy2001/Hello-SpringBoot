@@ -15,7 +15,7 @@ import java.util.List;
 
 
 @Repository
-public class CustomUserRepositoryImpl implements CustomUserRepository{
+public class CustomUserRepositoryImpl implements CustomUserRepository {
 
     @Autowired
     RoleRepository roleRepository;
@@ -31,7 +31,7 @@ public class CustomUserRepositoryImpl implements CustomUserRepository{
         BooleanBuilder where = buildFindUser(findUserRequest);
         List<User> userList = queryUser.from(qUser).where(where).fetch();
 
-        for (int i=0 ; i<userList.size() ; i++){
+        for (int i = 0; i < userList.size(); i++) {
             if (!userList.get(i).getIsActive())
                 userList.remove(userList.get(i));
         }
@@ -50,20 +50,20 @@ public class CustomUserRepositoryImpl implements CustomUserRepository{
         return null;
     }
 
-    public BooleanBuilder buildFindUser(FindUserRequest findUserRequest){
+    public BooleanBuilder buildFindUser(FindUserRequest findUserRequest) {
         QUser qUser = QUser.user;
         BooleanBuilder booleanBuilder = new BooleanBuilder();
 
         Integer id = findUserRequest.getId();
-        if(id != null && id > 0)
+        if (id != null && id > 0)
             booleanBuilder.and(qUser.id.eq(id));
 
         String email = findUserRequest.getEmail();
-        if(email != null)
+        if (email != null)
             booleanBuilder.and(qUser.email.eq(email));
 
         String firstName = findUserRequest.getFirstName();
-        if(firstName != null )
+        if (firstName != null)
             booleanBuilder.and(qUser.firstName.eq(firstName));
 
         String lastName = findUserRequest.getLastName();
@@ -78,7 +78,7 @@ public class CustomUserRepositoryImpl implements CustomUserRepository{
         if (address != null)
             booleanBuilder.and(qUser.address.eq(address));
 
-        if(findUserRequest.getRole() != null){
+        if (findUserRequest.getRole() != null) {
             Role role = roleRepository.findAllByName(findUserRequest.getRole());
             booleanBuilder.and(qUser.role.eq(role));
         }

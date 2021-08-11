@@ -18,6 +18,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import lombok.extern.slf4j.Slf4j;
+
 @Component
 @Slf4j
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
@@ -34,11 +35,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         // TODO Auto-generated method stub
         try {
             String jwt = getJwtFromRequest(request);
-            if(jwt != null && jwtTokenProvider.validateToken(jwt)) {
+            if (jwt != null && jwtTokenProvider.validateToken(jwt)) {
                 String userName = jwtTokenProvider.getUserIdFromJWT(jwt);
                 UserDetails userDetails = userDetailsService.loadUserByUsername(userName);
 
-                if(userDetails != null) {
+                if (userDetails != null) {
                     UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
 
                     auth.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
@@ -46,8 +47,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 }
 
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         filterChain.doFilter(request, response);
@@ -61,7 +61,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         }
         return null;
     }
-
 
 
 }

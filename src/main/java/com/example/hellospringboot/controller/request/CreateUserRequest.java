@@ -9,7 +9,6 @@ import lombok.*;
 @AllArgsConstructor
 @Getter
 public class CreateUserRequest {
-
     private String email;
     private String firstName;
     private String lastName;
