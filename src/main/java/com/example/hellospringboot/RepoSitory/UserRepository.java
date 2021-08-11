@@ -1,4 +1,4 @@
-package com.example.hellospringboot.RepoSitory;
+package com.example.hellospringboot.repository;
 
 import com.example.hellospringboot.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;

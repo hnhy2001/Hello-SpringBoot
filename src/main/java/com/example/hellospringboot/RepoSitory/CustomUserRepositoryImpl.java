@@ -1,4 +1,4 @@
-package com.example.hellospringboot.RepoSitory;
+package com.example.hellospringboot.repository;
 
 import com.example.hellospringboot.controller.request.FindUserRequest;
 import com.example.hellospringboot.model.QUser;

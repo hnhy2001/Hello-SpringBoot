@@ -1,9 +1,9 @@
 package com.example.hellospringboot.controller;
 
 
-import com.example.hellospringboot.Service.DemoService;
-import com.example.hellospringboot.Service.MessagesouceService;
-import com.example.hellospringboot.Service.UserMgmtService;
+import com.example.hellospringboot.service.DemoService;
+import com.example.hellospringboot.service.MessagesouceService;
+import com.example.hellospringboot.service.UserMgmtService;
 import com.example.hellospringboot.controller.request.CreateUserRequest;
 import com.example.hellospringboot.controller.request.LoginUserRequest;
 import com.example.hellospringboot.controller.request.UpdateUserRequest;

@@ -1,16 +1,14 @@
 package com.example.hellospringboot;
 
-import com.example.hellospringboot.RepoSitory.CustomUserRepository;
-import com.example.hellospringboot.RepoSitory.UserRepository;
-import com.example.hellospringboot.Service.UserMgmtServiceImpl;
+import com.example.hellospringboot.repository.CustomUserRepository;
+import com.example.hellospringboot.repository.UserRepository;
+import com.example.hellospringboot.service.UserMgmtServiceImpl;
 import com.example.hellospringboot.controller.request.FindUserRequest;
 import com.example.hellospringboot.jwt.JwtTokenProvider;
 import com.example.hellospringboot.model.User;
 import lombok.SneakyThrows;
-import org.apache.tomcat.jni.Local;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;

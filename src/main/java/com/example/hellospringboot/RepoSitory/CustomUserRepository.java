@@ -1,4 +1,4 @@
-package com.example.hellospringboot.RepoSitory;
+package com.example.hellospringboot.repository;
 
 import java.io.Serializable;
 import java.util.List;

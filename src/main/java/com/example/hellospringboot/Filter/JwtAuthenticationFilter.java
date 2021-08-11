@@ -1,4 +1,4 @@
-package com.example.hellospringboot.Filter;
+package com.example.hellospringboot.filter;
 
 import java.io.IOException;
 

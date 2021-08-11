@@ -1,4 +1,4 @@
-package com.example.hellospringboot.Config;
+package com.example.hellospringboot.config;
 
 
 import java.util.Locale;

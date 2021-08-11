@@ -1,13 +1,11 @@
-package com.example.hellospringboot.Config;
+package com.example.hellospringboot.config;
 
-import com.example.hellospringboot.Filter.JwtAuthenticationFilter;
+import com.example.hellospringboot.filter.JwtAuthenticationFilter;
 import com.example.hellospringboot.exceptions.RestAuthenticationEntryPoint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
-import org.springframework.security.config.annotation.web.HttpSecurityBuilder;
 
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;

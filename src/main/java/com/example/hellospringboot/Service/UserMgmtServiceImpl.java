@@ -1,8 +1,8 @@
-package com.example.hellospringboot.Service;
+package com.example.hellospringboot.service;
 
-import com.example.hellospringboot.RepoSitory.CustomUserRepository;
-import com.example.hellospringboot.RepoSitory.RoleRepository;
-import com.example.hellospringboot.RepoSitory.UserRepository;
+import com.example.hellospringboot.repository.CustomUserRepository;
+import com.example.hellospringboot.repository.RoleRepository;
+import com.example.hellospringboot.repository.UserRepository;
 import com.example.hellospringboot.controller.request.CreateUserRequest;
 import com.example.hellospringboot.controller.request.FindUserRequest;
 import com.example.hellospringboot.controller.request.UpdateUserRequest;
@@ -19,8 +19,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.management.Query;
-import java.io.Serializable;
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;

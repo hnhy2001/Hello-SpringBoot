@@ -1,12 +1,9 @@
-package com.example.hellospringboot.Service;
+package com.example.hellospringboot.service;
 
 import com.example.hellospringboot.controller.request.CreateUserRequest;
-import com.example.hellospringboot.controller.request.FindUserRequest;
 import com.example.hellospringboot.controller.request.UpdateUserRequest;
 import com.example.hellospringboot.dto.UserDto;
-import com.example.hellospringboot.exceptions.FindNotFound;
 import com.example.hellospringboot.model.User;
-import javassist.NotFoundException;
 
 import java.util.List;
 import java.util.Locale;

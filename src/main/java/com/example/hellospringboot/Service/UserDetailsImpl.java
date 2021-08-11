@@ -1,6 +1,6 @@
-package com.example.hellospringboot.Service;
+package com.example.hellospringboot.service;
 
-import com.example.hellospringboot.RepoSitory.UserRepository;
+import com.example.hellospringboot.repository.UserRepository;
 import com.example.hellospringboot.details.CustomUserDetails;
 import com.example.hellospringboot.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
